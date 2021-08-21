@@ -27,7 +27,9 @@ The following codes perform numerical integration of Ordinary Differential Equat
 
 **First order**
 
-The code performs a numerical integration of a first order differential equation ![\frac{dq}{dt}=-k](https://latex.codecogs.com/svg.latex?%5Cfrac%7Bdq%7D%7Bdt%7D%3D-k) using three different schemes Euler, Heun and Leapfrog.
+The code performs a numerical integration of a first order differential equation 
+![\Large \frac{dq}{dt}=-k](https://latex.codecogs.com/svg.latex?%5Cfrac%7Bdq%7D%7Bdt%7D%3D-k) 
+using three different schemes Euler, Heun and Leapfrog.
 To compile and run the code:
 
 ```
@@ -37,7 +39,11 @@ $ ./temp-scheme.x
 
 **Second order**
 
-The code performs a numerical integration of a second order differential equation ![\frac{d^2q}{dt^2}=-\omega_0^2q](https://latex.codecogs.com/svg.latex?%5Cfrac%7Bd%5E2q%7D%7Bdt%5E2%7D%3D-%5Comega_0%5E2q). For each integration step it calculates the system energy using ![E=\frac{1}{2}m\dot{q}^2+\frac{1}{2}m\omega_0^2q^2](https://latex.codecogs.com/svg.latex?E%3D%5Cfrac%7B1%7D%7B2%7Dm%5Cdot%7Bq%7D%5E2&plus;%5Cfrac%7B1%7D%7B2%7Dm%5Comega_0%5E2q%5E2).
+The code performs a numerical integration of a second order differential equation
+![\Large \frac{d^2q}{dt^2}=-\omega_0^2q](https://latex.codecogs.com/svg.latex?%5Cfrac%7Bd%5E2q%7D%7Bdt%5E2%7D%3D-%5Comega_0%5E2q) 
+
+For each integration step it calculates the system energy using
+![E=\frac{1}{2}m\dot{q}^2+\frac{1}{2}m\omega_0^2q^2](https://latex.codecogs.com/svg.latex?E%3D%5Cfrac%7B1%7D%7B2%7Dm%5Cdot%7Bq%7D%5E2&plus;%5Cfrac%7B1%7D%7B2%7Dm%5Comega_0%5E2q%5E2).
 To compile and run the code:
 
 ```
