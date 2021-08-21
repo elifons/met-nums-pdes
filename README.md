@@ -21,12 +21,36 @@ Output:
 
 `func.dat`, `der.dat`, `der2.dat` are the files with the function, first derivative and second derivative, respectively.
 
+### 2. ODEs
 
+The following codes perform numerical integration of Ordinary Differential Equations. In all cases `cond.inp` is the input file with main parameters.
 
-### 2. First order differential equation (eg, decay equation)
+**First order**
 
-The code performs a numerical integration of a first order differential equation $\frac{dq}{dt}=-kq$ using three different schemes Euler, Heun and Leapfrog.
+The code performs a numerical integration of a first order differential equation $$\frac{dq}{dt}=-kq$$ using three different schemes Euler, Heun and Leapfrog.
+To compile and run the code:
 
+```
+$ g++ temp-scheme.cpp -o temp-scheme.x
+$ ./temp-scheme.x
+```
+**Second order**
+
+The code performs a numerical integration of a second order differential equation $$\frac{d^2q}{dt^2}=-\omega_0^2q$$. For each integration step it calculates the system energy using $$E=\frac{1}{2}m\dot{q}^2+\frac{1}{2}m\omega_0^2q^2$$.
+To compile and run the code:
+
+```
+$ g++ temp-scheme-SO.cpp -o temp-scheme-SO.x
+$ ./temp-scheme-SO.x
+```
+**Pendulum**
+The code performs a numerical integration of the pendulum equation.
+To compile and run the code:
+
+```
+$ g++ pendulum.cpp -o pendulum.x
+$ ./pendulum.x
+```
 
 
 ### 3. Diffusion equation
